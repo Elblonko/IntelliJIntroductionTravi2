@@ -19,11 +19,14 @@ public class Fahrenheit extends Temperature {
 
     @Override
     public Temperature toCelsius() {
+        //setValue( (float)((getValue() -32 ) / 1.8));
+        //return this;
         return null;
     }
 
     @Override
-    public Temperature toFahrenheit() {
+    public  Temperature toFahrenheit() {
+
         return null;
     }
 }

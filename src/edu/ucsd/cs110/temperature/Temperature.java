@@ -15,6 +15,10 @@ public abstract class Temperature {
         return value;
     }
 
+    public void setValue(float v) {
+        value = v;
+    }
+
     public abstract Temperature toCelsius();
 
     public abstract Temperature toFahrenheit();
