@@ -2,13 +2,12 @@ package edu.ucsd.cs110.tests;
 
 import edu.ucsd.cs110.temperature.Celsius;
 import edu.ucsd.cs110.temperature.Temperature;
-import junit.framework.TestCase;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class CelsiusTest extends TestCase{
+public class CelsiusTest {
     private float delta = 0.001f;
 
     public void testCelsius(){

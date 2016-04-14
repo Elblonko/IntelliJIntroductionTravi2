@@ -5,8 +5,7 @@ import edu.ucsd.cs110.temperature.Temperature;
 
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class FahrenheitTest {
     private float delta = 0.001f;
