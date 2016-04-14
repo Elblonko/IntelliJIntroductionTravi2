@@ -2,12 +2,16 @@ package edu.ucsd.cs110.tests;
 
 import edu.ucsd.cs110.temperature.Fahrenheit;
 import edu.ucsd.cs110.temperature.Temperature;
-import junit.framework.TestCase;
 
+import org.junit.Test;
 
-public class FahrenheitTest extends TestCase{
+import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+public class FahrenheitTest {
     private float delta = 0.001f;
 
+    @Test
     public void testFahrenheit(){
         float value = 12.34f;
         Fahrenheit temp = new Fahrenheit(value);
@@ -15,6 +19,7 @@ public class FahrenheitTest extends TestCase{
         assertEquals(value, temp.getValue(), delta);
     }
 
+    @Test
     public void testFahrenheitToString(){
         float value = 12.34f;
 
@@ -37,6 +42,7 @@ public class FahrenheitTest extends TestCase{
 //        assertTrue(string.substring(0, endIndex).equals(beginning));
     }
 
+    @Test
     public void testFahrenheitToFahrenheit()
     {
         Fahrenheit temp = new Fahrenheit(32);
@@ -45,6 +51,7 @@ public class FahrenheitTest extends TestCase{
         assertEquals(32, convert.getValue(), delta);
     }
 
+    @Test
     public void testFahrenheitToCelsius(){
         Fahrenheit temp = new Fahrenheit(32);
 
